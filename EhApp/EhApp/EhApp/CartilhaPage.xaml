@@ -1,22 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EhApp.LoginPage">
+             x:Class="EhApp.CartilhaPage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand">
-            
-            <Label Text="Login" 
+        <StackLayout>
+            <Label Text="Cartilha test" 
                    FontSize="40" 
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="FillAndExpand"
                    VerticalTextAlignment="Center">
             </Label>
-            
-            <Button x:Name="BotaoLogin" 
-                    Text="Login"
+
+            <Button x:Name="BotaoVoltar" 
+                    Text="Voltar"
                     FontSize="30">
             </Button>
 
+            <Button x:Name="BotaoSair" 
+                    Text="Sair"
+                    FontSize="35">
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EhApp.NewTreinoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista de treinos" 
+                   FontSize="40" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   VerticalTextAlignment="Center">
+            </Label>
+            <Label Text="Model1" 
+                   FontSize="15" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   VerticalTextAlignment="Center">
+            </Label>
+            <Label Text="Model2" 
+                   FontSize="15" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   VerticalTextAlignment="Center">
+            </Label>
+            <Label Text="Model3" 
+                   FontSize="15" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   VerticalTextAlignment="Center">
+            </Label>
+            <Label Text="Model4" 
+                   FontSize="15" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   VerticalTextAlignment="Center">
+            </Label>
+            <Label Text="Model5" 
+                   FontSize="15" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   VerticalTextAlignment="Center">
+            </Label>
+
+            <Button x:Name="BotaoVoltar" 
+                    Text="Voltar"
+                    >
+            </Button>
+
+            <Button x:Name="btSelecionaTreino" 
+                    Text="Selecionar treino"
+                    >
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
