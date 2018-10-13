@@ -17,12 +17,18 @@ namespace EhApp
             InitializeComponent();
             //BotaoLogin.Clicked += LoginClicked;
             BotaoLogin.Clicked += AbrirMenuClicked;
+            BotaoCadastro.Clicked += AbrirCadastroClicked;
         }
 
 
         public async void AbrirMenuClicked(Object o, EventArgs e)
         {
             await Navigation.PushAsync(new PerfilPage());
+        }
+
+        public async void AbrirCadastroClicked(Object o, EventArgs e)
+        {
+            await Navigation.PushAsync(new CadastroPage());
         }
 
         //await Navigation.PushAsync(new MenuPage()); 

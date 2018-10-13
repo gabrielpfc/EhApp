@@ -1,21 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EhApp.LoginPage">
+             x:Class="EhApp.LoginPage"
+             BackgroundColor="LightSlateGray">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand">
-            
-            <Label Text="Login" 
-                   FontSize="40" 
+        <StackLayout VerticalOptions="CenterAndExpand" 
+                     Spacing="9"
+                     TranslationY="-10"
+                     Margin="9">
+
+            <Label Text="Log in to Easy Heath" 
+                   TranslationY="-10"
+                   TextColor="LightGreen"
+                   FontSize="30" 
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="FillAndExpand"
-                   VerticalTextAlignment="Center">
+                   VerticalTextAlignment="Center"
+                   Margin="10"
+                   FontAttributes="Bold">
             </Label>
+            <Label Text="Usuário/Email"
+                   FontSize="14"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="WhiteSmoke"
+                   FontAttributes="Bold">
+            </Label>
+            <Entry x:Name="EntryUser"
+                   BackgroundColor="LightGray"
+                   Placeholder=""
+                   Margin="5">
+             </Entry>
+            <Label Text="Senha"
+                   FontSize="14"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="WhiteSmoke"
+                   FontAttributes="Bold">
+            </Label>
+            <Entry x:Name="entrySenha"
+                   IsPassword="True"
+                   BackgroundColor="LightGray"
+                   Placeholder=""
+                   Margin="5">
+             </Entry>
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="CenterAndExpand"  
+                         Spacing="10"
+                         TranslationY="16">
+                
+
+                <Button x:Name="BotaoCadastro" 
+                    Text="Cadastrar"
+                    FontSize="17"
+                    TextColor="WhiteSmoke"
+                    FontAttributes="Bold"
+                    TranslationX="-10"
+                    >
+                </Button>
+                <Button x:Name="BotaoLogin" 
+                    Text="Log in"
+                    FontSize="25"
+                    TextColor="WhiteSmoke"
+                    WidthRequest="190"
+                    FontAttributes="Bold">
+                </Button>
+            </StackLayout>
             
-            <Button x:Name="BotaoLogin" 
-                    Text="Login"
-                    FontSize="30">
-            </Button>
 
         </StackLayout>
     </ContentPage.Content>

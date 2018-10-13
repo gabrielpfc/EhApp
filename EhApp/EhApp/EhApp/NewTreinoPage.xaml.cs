@@ -15,19 +15,14 @@ namespace EhApp
 		public NewTreinoPage ()
         {
             InitializeComponent();
-            BotaoVoltar.Clicked += BotaoVoltarClicked;
             btSelecionaTreino.Clicked += BotaoSelecionaTreinoClicked;
-        }
-
-        public async void BotaoVoltarClicked(object o, EventArgs e)
-        {
-            await Navigation.PopAsync();
         }
         
         public async void BotaoSelecionaTreinoClicked(object o, EventArgs e)
         {
             DisplayAlert("Selecionado com sucesso.", "Bom treino!", "Ok");
-            await Navigation.PopToRootAsync();
+            //Sair - > await Navigation.PopToRootAsync();
+            await Navigation.PopAsync();
         }
     }
 }

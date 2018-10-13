@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EhApp.CadastroPage"
+             Title="Cadastro">
+    <ContentPage.Content>
+        <StackLayout    VerticalOptions="CenterAndExpand"
+                        Margin="15"            
+                        TranslationY="-30">
+            <Label Text="Usuário"></Label>
+            <Entry x:Name="EntryNome"
+                   BackgroundColor="LightGray"
+                   Placeholder=""
+             ></Entry>
+            <Label Text="Senha"></Label>
+            <Entry x:Name="entrySenha"
+                   BackgroundColor="LightGray"
+                   Placeholder=""
+             ></Entry>
+            <Label Text="Email"></Label>
+            <Entry x:Name="entryEmail"
+                   BackgroundColor="LightGray"
+                   Placeholder="">
+            </Entry>
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="CenterAndExpand"  
+                         Spacing="10"
+                         TranslationY="16">
+
+
+                <Button x:Name="BotaoCancelar" 
+                    Text="Cancelar"
+                    FontSize="17"
+                    TextColor="WhiteSmoke"
+                    FontAttributes="Bold"
+                    TranslationX="-10"
+                    >
+                </Button>
+                <Button x:Name="BotaoCadastrar" 
+                    Text="Cadastrar"
+                    FontSize="25"
+                    TextColor="WhiteSmoke"
+                    WidthRequest="190"
+                    FontAttributes="Bold">
+                </Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

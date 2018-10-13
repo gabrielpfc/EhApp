@@ -41,10 +41,6 @@
                    VerticalTextAlignment="Center">
             </Label>
 
-            <Button x:Name="BotaoVoltar" 
-                    Text="Voltar"
-                    >
-            </Button>
 
             <Button x:Name="btSelecionaTreino" 
                     Text="Selecionar treino"
