@@ -16,6 +16,7 @@ namespace EhApp
         {
             InitializeComponent();
             BotaoCancelar.Clicked += BotaoSairClicked;
+            BotaoCadastrar.Clicked += BotaoCadastrarClicked;
         }
 
 
@@ -23,6 +24,11 @@ namespace EhApp
         {
             await Navigation.PopToRootAsync();
         }
+        public async void BotaoCadastrarClicked(object o, EventArgs e)
+        {
+            await Navigation.PushAsync(new CompletePerfilPage());
+        }
+
 
     }
 }

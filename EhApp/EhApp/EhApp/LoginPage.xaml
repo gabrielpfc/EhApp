@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EhApp.LoginPage"
-             BackgroundColor="LightSlateGray">
+             BackgroundColor="DodgerBlue">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" 
                      Spacing="9"
@@ -51,7 +51,7 @@
                 <Button x:Name="BotaoCadastro" 
                     Text="Cadastrar"
                     FontSize="17"
-                    TextColor="WhiteSmoke"
+                    TextColor="White"
                     FontAttributes="Bold"
                     TranslationX="-10"
                     >
@@ -59,7 +59,7 @@
                 <Button x:Name="BotaoLogin" 
                     Text="Log in"
                     FontSize="25"
-                    TextColor="WhiteSmoke"
+                    TextColor="White"
                     WidthRequest="190"
                     FontAttributes="Bold">
                 </Button>

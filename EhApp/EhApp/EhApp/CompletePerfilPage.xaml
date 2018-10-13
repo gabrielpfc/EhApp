@@ -1,26 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EhApp.CompletePerfilPage">
+             x:Class="EhApp.CompletePerfilPage"
+             Title="Cadastro">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Completar dados do perfil Page" 
-                   FontSize="40" 
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="FillAndExpand"
-                   VerticalTextAlignment="Center">
-            </Label>
-
-            <Button x:Name="BotaoVoltar" 
-                    Text="Voltar"
-                    FontSize="30">
-            </Button>
+        <StackLayout Margin="30">
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="Dados Pessoais">
+                        <EntryCell x:Name="EntryPeso"
+                             Label="Peso:"
+                             Placeholder=""/>
+                        <EntryCell x:Name="EntryAltura"
+                             Label="Altura:"
+                             Placeholder=""/>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" TranslationY="16">
+                                <Label Text="Nível de Atividade:"/>
+                                <Slider x:Name="SliderIdade"  
+                                        Margin="-4"
+                                        TranslationY="-10"
+                                    HorizontalOptions="FillAndExpand"
+                                    Scale="1" Maximum="3" Minimum="1"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
 
             <Button x:Name="BotaoSair" 
-                    Text="Sair"
-                    FontSize="35">
+                    Text="Sair">
             </Button>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

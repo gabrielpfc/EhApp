@@ -1,16 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EhApp.CartilhaPage">
+             x:Class="EhApp.CartilhaPage"
+             Title="Temp - Cartilha">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Cartilha test" 
-                   FontSize="40" 
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="FillAndExpand"
-                   VerticalTextAlignment="Center">
-            </Label>
-
             <Button x:Name="BotaoVoltar" 
                     Text="Voltar"
                     FontSize="30">

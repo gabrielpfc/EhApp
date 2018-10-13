@@ -15,14 +15,9 @@ namespace EhApp
 		public CompletePerfilPage ()
         {
             InitializeComponent();
-            BotaoVoltar.Clicked += BotaoVoltarClicked;
             BotaoSair.Clicked += BotaoSairClicked;
         }
 
-        public async void BotaoVoltarClicked(object o, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
 
         public async void BotaoSairClicked(object o, EventArgs e)
         {
