@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EhApp"
+             x:Class="EhApp.Views.MainPage"
+             Title="Easy Health">
+    <StackLayout HorizontalOptions="Fill"
+                 BackgroundColor="BlueViolet"
+                 Spacing="12"
+                 Padding="2"
+                 VerticalOptions="Fill">
+        <Label Text="Cartilha" 
+                       FontSize="25" 
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Start"
+                       VerticalTextAlignment="Start">
+        </Label>
+        <StackLayout BackgroundColor="LightBlue"
+                     VerticalOptions="FillAndExpand"
+                     Padding="15">
+            <Label Text="Treino" 
+                       FontSize="15" 
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       VerticalTextAlignment="Start">
+            </Label>
+            <Label Text="Dieta" 
+                       FontSize="15" 
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       VerticalTextAlignment="Start">
+            </Label>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

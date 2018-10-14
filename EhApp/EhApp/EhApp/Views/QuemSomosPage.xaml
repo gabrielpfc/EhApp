@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EhApp.Views.QuemSomosPage"
+             Title="Quem Somos?">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="DarkGray" Padding="40">
+            <Label Text="Desenvolvido pelos integrantes do Grupo EasyHealth em Projeto AM da FIAP."
+                VerticalOptions="StartAndExpand" 
+                TextColor="LightGreen"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

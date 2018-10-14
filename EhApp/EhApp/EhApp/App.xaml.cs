@@ -11,12 +11,23 @@ namespace EhApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new EhApp.Views.LoginPage();
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            MessagingCenter.Subscribe<ViewModel.LoginViewModel>(this, "LoginSucesso",
+                (sender) =>
+                {
+                    MainPage = new Views.PrincipalPage();
+                });
+            MessagingCenter.Subscribe<ViewModel.LoginViewModel>(this, "AbrirCadastro",
+                (sender) =>
+                {
+                    MainPage = new Views.CadastroPage();
+                });
+
         }
 
         protected override void OnSleep()

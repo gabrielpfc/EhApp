@@ -7,26 +7,26 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EhApp
+namespace EhApp.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CartilhaPage : ContentPage
+	public partial class DietaPage : ContentPage
 	{
-		public CartilhaPage ()
+		public DietaPage ()
         {
             InitializeComponent();
             BotaoVoltar.Clicked += BotaoVoltarClicked;
             BotaoSair.Clicked += BotaoSairClicked;
         }
 
-        public async void BotaoVoltarClicked(object o, EventArgs e)
+        public void BotaoSairClicked(object o, EventArgs e)
         {
-            await Navigation.PopAsync();
+            Navigation.PushModalAsync(new LoginPage());
+        }
+        public void BotaoVoltarClicked(object o, EventArgs e)
+        {
+            Navigation.PushModalAsync(new MainPage());
         }
 
-        public async void BotaoSairClicked(object o, EventArgs e)
-        {
-            await Navigation.PopToRootAsync();
-        }
     }
 }

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:EhApp.ViewModel"
+             x:Class="EhApp.Views.LoginPage"
+             BackgroundColor="DodgerBlue">
+
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel></vm:LoginViewModel>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" 
+                     Spacing="11"
+                     TranslationY="-20"
+                     Padding="41">
+            <Image x:Name="Ehicon"
+                   Scale="0.5"
+                   VerticalOptions="Start"
+                   TranslationY="-40"></Image>
+            <Label Text="Log in to Easy Heath"
+                   TextColor="LightGreen"
+                   FontSize="24" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Start"
+                   VerticalTextAlignment="Start"
+                   Margin="10"
+                   TranslationY="-50"
+                   FontAttributes="Bold">
+            </Label>
+            <Entry Placeholder="Usuário" 
+                   x:Name="EntryUsuario" 
+                   TranslationY="-40"
+                   Text="{Binding Usuario}"/>
+            <Entry Placeholder="Senha" 
+                   x:Name="EntrySenha" 
+                   TranslationY="-40"
+                   Text="{Binding Senha}" IsPassword="True"/>
+            <StackLayout Orientation="Horizontal" 
+                         VerticalOptions="Start"
+                         HorizontalOptions="CenterAndExpand"  
+                         Spacing="16"
+                         TranslationY="-20">
+                <Button x:Name="BotaoCadastro" 
+                    Text="Cadastrar"
+                    FontSize="14"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    TranslationX="-3"
+                    Command="{Binding CadastrarClickedCommand}">
+                </Button>
+                <Button x:Name="BotaoLogin" 
+                    Text="Log in"
+                    FontSize="18"
+                    TextColor="White"
+                    WidthRequest="170"
+                    FontAttributes="Bold"
+                    Command="{Binding EntrarClickedCommand}">
+                </Button>
+            </StackLayout>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,13 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EhApp.CompletePerfilPage"
+             x:Class="EhApp.Views.CompletePerfilPage"
              Title="Cadastro">
     <ContentPage.Content>
-        <StackLayout Margin="30">
-            <TableView>
+        <StackLayout Margin="30"
+                     VerticalOptions="StartAndExpand">
+            <TableView HeightRequest="310">
                 <TableRoot>
                     <TableSection Title="Dados Pessoais">
+                        <EntryCell x:Name="EntryNome"
+                             Label="Nome:"
+                             Placeholder=""/>
                         <EntryCell x:Name="EntryPeso"
                              Label="Peso:"
                              Placeholder=""/>
@@ -27,10 +31,16 @@
                     </TableSection>
                 </TableRoot>
             </TableView>
-
-            <Button x:Name="BotaoSair" 
-                    Text="Sair">
-            </Button>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                <Label Text="Objetivo"></Label>
+                <Picker x:Name="PickerObjetivo"
+                        WidthRequest="230"
+                        TranslationY="-15"
+                ></Picker>
+            </StackLayout>
+            <Button x:Name="BtSalvar"
+                Text="Salvar"
+                    VerticalOptions="End"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

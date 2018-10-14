@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EhApp
+namespace EhApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CadastroPage : ContentPage
@@ -20,13 +20,13 @@ namespace EhApp
         }
 
 
-        public async void BotaoSairClicked(object o, EventArgs e)
+        public void BotaoSairClicked(object o, EventArgs e)
         {
-            await Navigation.PopToRootAsync();
+            Navigation.PushModalAsync(new LoginPage());
         }
-        public async void BotaoCadastrarClicked(object o, EventArgs e)
+        public void BotaoCadastrarClicked(object o, EventArgs e)
         {
-            await Navigation.PushAsync(new CompletePerfilPage());
+            Navigation.PushModalAsync(new CadastroPage());
         }
 
 

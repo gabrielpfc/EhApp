@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EhApp.Views.PerfilPage"
+             Title="Perfil">
+    <ContentPage.Content>
+        <StackLayout Padding="2">
+            <Label Text="Nome, idade, peso, idade, sexo, meta, etc"
+                   Margin="7">
+                
+            </Label>
+            <Button x:Name="btNovoTreino"
+                    Clicked="TreinoClicked" 
+                    Text="Novo treino">
+            </Button>
+            <Button x:Name="BtNovaDieta" 
+                    Clicked="DietaClicked"
+                    Text="Nova Dieta">
+            </Button>
+            <Button x:Name="BtEditarDados" 
+                    Clicked="EditarClicked"
+                    Text="Editar Dados">
+            </Button>
+            <Button x:Name="BtQuemSomos" 
+                    Clicked="QuemSomosClicked"
+                    Text="Quem Somos?">
+            </Button>
+            <Button x:Name="BotaoSair" 
+                    Clicked="SairClicked"
+                    Text="Sair">
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

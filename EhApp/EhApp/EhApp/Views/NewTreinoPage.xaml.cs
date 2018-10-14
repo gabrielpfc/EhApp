@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EhApp
+namespace EhApp.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class NewTreinoPage : ContentPage
@@ -18,11 +18,12 @@ namespace EhApp
             btSelecionaTreino.Clicked += BotaoSelecionaTreinoClicked;
         }
         
-        public async void BotaoSelecionaTreinoClicked(object o, EventArgs e)
-        {
+
+        public void BotaoSelecionaTreinoClicked(object o, EventArgs e)
+       {
             DisplayAlert("Selecionado com sucesso.", "Bom treino!", "Ok");
             //Sair - > await Navigation.PopToRootAsync();
-            await Navigation.PopAsync();
+          //  await Navigation.PopAsync();
         }
     }
 }
